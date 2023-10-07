@@ -5,12 +5,6 @@
 
 
 int main(){
-  // int n;
-  // list t = create_list_integer();
-  // system("clear");
-  // printf("\nEnter the element that you search: ");
-  // scanf("%d", &n);
-  // search_element(t, n
   int choice,n;
   list l;
   d_list dl;
@@ -108,7 +102,7 @@ int main(){
         case 9:
           dl = create_d_list();
           break;
-          
+
         case 10:
           printf("Display the list in order of typing\n");
           display_d_list_order_typing(dl);
