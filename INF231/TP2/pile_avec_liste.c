@@ -45,6 +45,5 @@ char depiler(Pile *p){
         free(element);
         p->nb_element--;
     }
-
     return valeur;
 }
