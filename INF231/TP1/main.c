@@ -1,3 +1,7 @@
+/*
+  NOM: LEFAKONG TSOMELOU Vignol Dilane
+  MATRICULE: 22T2966
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -10,33 +14,38 @@ int main(){
     d_list dl;
     do{
 
+        //date de naissance: 17 janvier 2005
         system("clear || cls");
 
         printf("+-----------------------------------------------------------------+\n");
         printf("|                    LINKED LIST PROGRAM                          |\n");
         printf("+-----------------------------------------------------------------+\n");
         printf("Select one option\n");
+        printf("Simple linked list state: ");
+        display(l);
+        printf("Double linked list state: ");
+        display_d_list_order_typing(dl);
         printf("\n[ CREATING A LINKED LIST ]\n");
-        printf("---------------------------------------------\n\n");
+        printf("---------------------------------------------\n");
         printf("\t1. Create a list of two integer;\n");
         printf("\t2. Create a list of n integer;\n");
         printf("\t3. Create a list (stop with -1);\n");
-        printf("\n[ SEARCH AN ELEMENT IN THE LINKED LIST ]\n");
-        printf("----------------------------------------------\n\n");
+        printf("[ SEARCH AN ELEMENT IN THE LINKED LIST ]\n");
+        printf("----------------------------------------------\n");
         printf("\t4. Search the integer\n");
         printf("\t5. Search the last occurence of an element\n");
-        printf("\n[ DELETE IN THE LINKED LIST ]\n");
-        printf("----------------------------------------------\n\n");
+        printf("[ DELETE IN THE LINKED LIST ]\n");
+        printf("----------------------------------------------\n");
         printf("\t6. Delete the first element of a list\n");
         printf("\t7. Delete first occurence of an element\n");
         printf("\t8. Delete all occurence of an element\n");
-        printf("\n[ DOUBLE  LINKED LIST ]\n");
-        printf("----------------------------------------------\n\n");
+        printf("[ DOUBLE  LINKED LIST ]\n");
+        printf("----------------------------------------------\n");
         printf("\t9. Create the double linked list\n");
         printf("\t10. Display double list in the order of typing\n");
         printf("\t11. Display double list in the inverse order of typing\n");
         printf("\n[ 0. EXIT ]\n");
-        printf("\n\nEnter your choice: ");
+        printf("\nEnter your choice: ");
         scanf("%d", &choice);
 
         if(choice != 0)
@@ -109,7 +118,7 @@ int main(){
             break;
 
             case 11:
-            printf("Displat the list in inverse order of typing\n");
+            printf("Display the list in inverse order of typing\n");
             display_d_list_inverse_order_typing(dl);
             break;
 

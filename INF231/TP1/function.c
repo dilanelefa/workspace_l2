@@ -1,3 +1,7 @@
+ /*
+  NOM: LEFAKONG TSOMELOU Vignol Dilane
+  MATRICULE: 22T2966
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -6,11 +10,11 @@
 /*
     helpers programm
 */
-
 list init(){
     list liste = NULL;
     return liste;
 }
+//date de naissance: 17 janvier 2005
 
 //insert the integer in the list
 void insert(list *l, int value){
@@ -82,7 +86,10 @@ list create_list_integer(){
     int a;
     do{
         printf("Enter the new integer element: ");
-        scanf("%d", &a);
+        if(scanf("%d", &a) == 0){
+          a = -1;
+          scanf("%*[\n]");
+        }
         if(a != -1)
         insert(&t, a);
     }while(a != -1);

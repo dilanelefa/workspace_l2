@@ -1,3 +1,7 @@
+/*
+  NOM: LEFAKONG TSOMELOU Vignol Dilane
+  MATRICULE: 22T2966
+*/
 #ifndef __FUNCTION_H__
 #define __FUNCTION_H__
 
@@ -9,7 +13,8 @@ struct cellule{
   list next;
 };
 
-//defination of d_list
+
+///date de naissance: 17 janvier 2005
 typedef  struct d_cellule *d_list;
 
 struct d_cellule{
