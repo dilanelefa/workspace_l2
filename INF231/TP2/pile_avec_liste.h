@@ -19,6 +19,4 @@ int estPleine(Pile p);
 void empiler(Pile *p, char valeur);
 char depiler(Pile *p);
 
-void print(Pile p);
-
 #endif

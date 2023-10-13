@@ -48,14 +48,3 @@ char depiler(Pile *p){
 
     return valeur;
 }
-
-void print(Pile p){
-    if(!estVide(p)){
-        Liste t = p.sommet;
-        while(t!=NULL){
-            printf("%c", t->valeur);
-            t = t->suivant;
-        }
-        printf("\n");
-    }
-}
